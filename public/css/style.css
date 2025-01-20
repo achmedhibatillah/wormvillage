@@ -1,0 +1,68 @@
+* {
+    font-family: "Lato", serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #006137;
+    --color-2: #EED3B1;
+    --color-3: #2e7d39;
+    --color-4: #E8ECD7;
+
+    --color-3-sec: #59b865;
+}
+  
+.bg-color1 { background-color: var(--color-1); }
+.bg-color2 { background-color: var(--color-2); }
+.bg-color3 { background-color: var(--color-3); }
+.bg-color4 { background-color: var(--color-4); }
+
+.bg-color3-sec { background-color: var(--color-3-sec); }
+
+.text-color1 { color: var(--color-1); }
+.text-color2 { color: var(--color-2); }
+.text-color3 { color: var(--color-3); }
+.text-color4 { color: var(--color-4); }
+
+.btn-color1 { background-color: var(--color-1); color: var(--color-2); }
+.btn-color1:hover { background-color: var(--color-2); color: var(--color-1); border: 1px solid var(--color-1); }
+.btn-color2 { background-color: var(--color-2); color: var(--color-1); }
+.btn-color2:hover { background-color: var(--color-1); color: var(--color-2); border: 1px solid var(--color-2); }
+.btn-color3 { background-color: var(--color-3); color: var(--color-4); }
+.btn-color3:hover { background-color: var(--color-4); color: var(--color-3); border: 1px solid var(--color-4); }
+.btn-color4 { background-color: var(--color-4); color: var(--color-3); }
+.btn-color4:hover { background-color: var(--color-3); color: var(--color-4); border: 1px solid var(--color-4); }
+
+.btn-color2-transparent { background-color: transparent; color: var(--color-2); border: 1px solid var(--color-2); }
+.btn-color2-transparent:hover { background-color: var(--color-2); color: var(--color-1); border: 1px solid var(--color-2); }
+
+.btn-color3-sec { background-color: var(--color-3-sec); color: var(--color-4); }
+.btn-color3-sec:hover { background-color: var(--color-4); color: var(--color-3-sec); border: 1px solid var(--color-4); }
+
+.bg-web-100vh { background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; }
+
+.bg-web-100vh-guest {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Pastikan konten tetap di atas */
+}
+
+.bg-web-100vh-guest::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.text-tahoma { font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif; }
+
+#navbar-admin { position:fixed;top:0;left:0;height:100vh; }
+
+@media (max-width: 767px) {
+    #navbar-admin { position:inherit;top:0;left:0;height:auto;width:100%!important; }
+}

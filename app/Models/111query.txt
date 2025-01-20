@@ -1,0 +1,27 @@
+CREATE TABLE reward_golongan (
+    reward_golongan_id INT PRIMARY KEY,
+    reward_golongan_berat DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE reward_barang (
+    reward_barang_id INT AUTO_INCREMENT PRIMARY KEY,
+    reward_barang_barang VARCHAR(100) NOT NULL,
+    reward_golongan_id INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (reward_golongan_id) REFERENCES reward_golongan(reward_golongan_id) ON DELETE CASCADE
+);
+
+INSERT INTO reward_barang (reward_barang_barang, reward_golongan_id, created_at, updated_at) VALUES
+('3 Mie Instan', 1, NOW(), NOW()),
+
+('0.5 lt Minyak Goreng', 2, NOW(), NOW()),
+('1 Biji Mie Instan', 2, NOW(), NOW()),
+('1 Sachet Kopi Kecil', 2, NOW(), NOW()),
+
+('0.5 lt Minyak Goreng', 3, NOW(), NOW()),
+('1/4 kg Gula', 3, NOW(), NOW()),
+('2 Sachet Kopi Luwak', 3, NOW(), NOW());
+
