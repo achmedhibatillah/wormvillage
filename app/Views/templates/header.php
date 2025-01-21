@@ -3,6 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Wormvillage" />
+    <meta property="og:description" content="Sistem pengelolaan sampah organik wormvillage yang mendukung upaya mengurangi pencemaran lingkungan." />
+    <meta property="og:url" content="https://wormvillage.com" />
+    <meta property="og:image" content="<?= base_url('images/meta.png') ?>" />
+    <meta property="og:type" content="website" />
+
     <title>Wormvillage | <?= $judul ?></title>
 
     <link rel="icon" href="<?= base_url('images/favicon.png') ?>" type="image/png">

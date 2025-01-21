@@ -26,16 +26,16 @@
             Panduan
           </a>
           <ul class="dropdown-menu bg-color2" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item text-color1" href="<?= base_url('#panduan-daftar') ?>">Tata Cara Pendaftaran Peserta</a></li>
-            <li><a class="dropdown-item text-color1" href="<?= base_url('#panduan-1') ?>">Tata Cara Penyetoran Sampah</a></li>
-            <li><a class="dropdown-item text-color1" href="<?= base_url('#panduan-2') ?>">Tata Cara Memperoleh Reward</a></li>
+            <li><a class="dropdown-item text-color1 ls-nav" href="<?= base_url('#panduan-daftar') ?>">Tata Cara Pendaftaran Peserta</a></li>
+            <li><a class="dropdown-item text-color1 ls-nav" href="<?= base_url('#panduan-1') ?>">Tata Cara Penyetoran Sampah</a></li>
+            <li><a class="dropdown-item text-color1 ls-nav" href="<?= base_url('#panduan-2') ?>">Tata Cara Memperoleh Reward</a></li>
           </ul>
         </li>
       </ul>
     </div>
     <!-- Toggler and User Icon -->
-    <div class="d-flex align-items-center order-2">
-      <a href="<?= base_url('sign-in-user') ?>" id="user-icon"><i class="fas fa-user text-color2"></i></a>
+    <div class="d-flex align-items-center justify-content-between order-2" id="btn-nav">
+      <a href="<?= base_url('sign-in-user') ?>" id="user-icon" class="me-auto"><i class="fas fa-user text-color2"></i></a>
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
         <i class="fas fa-bars text-color1"></i>
       </button>
@@ -45,7 +45,7 @@
 <?php if(session()->get('status') == 'login-user') : ?>
 <a href="<?= base_url('user') ?>" class="text-color1 bg-color2 px-2 fw-bold shadow" style="position:fixed;bottom:7px;left:7px;z-index:99;letter-spacing:-1px;border-radius:30px;text-decoration:none;">Anda sedang login <i class="fas fa-check-circle"></i></a>
 <?php else : ?>
-<a href="<?= base_url('sign-in-user') ?>" class="text-danger bg-color2 px-2 fw-bold shadow" style="position:fixed;bottom:7px;left:7px;z-index:99;letter-spacing:-1px;border-radius:30px;text-decoration:none;">Anda belum login <i class="fas fa-exclamation-circle"></i></a>
+<a href="<?= base_url('sign-in-user') ?>" class="text-danger bg-color2 px-2 fw-bold shadow" style="position:fixed;bottom:7px;left:7px;z-index:99;letter-spacing:-1px;border-radius:30px;text-decoration:none;">Anda telah login <i class="fas fa-exclamation-circle"></i></a>
 <?php endif; ?>
 
 <style>
@@ -92,6 +92,12 @@
 .swal-confirm-text-color {
     color: var(--color-1) !important;
 }
+@media (max-width: 768px) {
+  #navbarNav.show + #btn-nav {
+    width: 100%;
+    margin: 7px 0 10px 0;
+  }
+}
 </style>
 
 <script>
@@ -101,14 +107,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggler = document.querySelector(".navbar-toggler");
     const navbarCollapse = document.getElementById("navbarNav");
 
-    toggler.addEventListener("click", function () {
-        if (navbarCollapse.classList.contains("show")) {
-            navbar.style.borderRadius = "50px";
-            navbarcont.style.borderRadius = "50px";
-        } else {
-            navbar.style.borderRadius = "7px";
-            navbarcont.style.borderRadius = "7px";
-        }
+    // Event saat navbar dibuka
+    navbarCollapse.addEventListener("show.bs.collapse", function () {
+        navbar.style.borderRadius = "7px";
+        navbarcont.style.borderRadius = "7px";
+    });
+
+    // Event saat navbar ditutup
+    navbarCollapse.addEventListener("hide.bs.collapse", function () {
+        navbar.style.borderRadius = "50px";
+        navbarcont.style.borderRadius = "50px";
     });
 });
 
