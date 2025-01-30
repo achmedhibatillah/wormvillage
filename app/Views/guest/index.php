@@ -16,8 +16,122 @@
 
 </section>
 
-<section>
+<section id="about-us">
+<div class="row m-0 p-0 bg-color2" style="min-height:100vh;">
+<div class="col-md-4 m-0 p-0 d-flex justify-content-center align-items-center">
+    <img src="<?= base_url('images/about-us.png') ?>" style="width:310px;" class="mt-5 mt-md-0">
+</div>
+<div class="col-md-8 m-0 p-0 text-color1 d-flex justify-content-center align-items-center">
+    <div class="my-5">
+        <h1 class="ls-xxs fw-900 text-center text-md-start">About Us</h1>
+        <div class="card m-0 p-0 py-2 px-3 ms-3 me-5 bg-color1">
+            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start">EcoWorm adalah inisiatif sosial berbasis circular economy yang berfokus pada pengelolaan sampah organik melalui budidaya cacing untuk meningkatkan kesuburan tanah dan produktivitas pertanian. Kami hadir untuk memberikan solusi inovatif terhadap permasalahan lingkungan, khususnya dalam mengurangi timbunan sampah organik yang belum terkelola dengan baik serta meningkatkan kualitas tanah pertanian melalui pupuk kascing.</p>
+        </div>
+        <div class="card m-0 p-0 py-2 px-3 ms-5 me-3 bg-color3 mt-2">
+            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start">Dengan mengusung pendekatan berbasis komunitas, EcoWorm melibatkan berbagai pihak, termasuk masyarakat desa, petani, kelompok tani (Gapoktan), akademisi, dan relawan. Kami percaya bahwa pengelolaan lingkungan yang baik harus dimulai dari kesadaran dan partisipasi aktif masyarakat. Oleh karena itu, kami tidak hanya menyediakan solusi teknis dalam bentuk sistem pengolahan sampah, tetapi juga melakukan edukasi dan pendampingan bagi masyarakat agar dapat mengelola sampah secara mandiri dan berkelanjutan.</p>
+        </div>
+        <div class="card m-0 p-0 py-2 px-3 ms-3 me-5 bg-color1 mt-2">
+            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start">Sebagai organisasi sosial, kami juga mengintegrasikan teknologi dalam setiap tahap implementasi proyek. Dengan adanya platform monitoring digital, kami memastikan bahwa setiap proses pengelolaan sampah dan produksi pupuk kascing dapat dipantau secara transparan dan akurat. Hal ini memungkinkan semua pihak yang terlibat, termasuk pemerintah desa, untuk mendapatkan data real-time mengenai perkembangan proyek.</p>
+        </div>
+        <div class="card m-0 p-0 py-2 px-3 ms-5 me-3 bg-color3 mt-2">
+            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start">Saat ini, EcoWorm tengah berfokus pada implementasi program di Desa Sumberbrantas, Kota Batu, dengan harapan dapat direplikasi ke wilayah lain yang menghadapi tantangan serupa. Kami berkomitmen untuk terus berinovasi dalam menciptakan solusi ramah lingkungan yang dapat memberikan dampak sosial dan ekonomi bagi masyarakat.</p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
 
+<section id="our-team" class="d-flex justify-content-center align-items-center bg-color2" style="min-height:100vh;">
+<div class="row m-0 p-0 d-flex justify-content-center align-items-center">
+    <div class="col-12 col-md-9 m-0 p-0 d-flex justify-content-center align-items-center">
+        <div style="width:90%;" class="">
+            <div class="row m-0 p-0 pb-2 px-4 justify-content-center">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h1 class="ls-xxs fw-900 text-center text-md-start text-color1">Our Team</h1>
+                </div>
+                <!--  -->
+                <div class="col-6 col-md-3 m-0 p-0 d-flex justify-content-center align-items-center">
+                    <div class="card mb-0 my-4 bg-color2 mt-2 shadow" style="width:95%;">
+                        <div class="bg-color1 rounded-top" style="height:10px;"></div>
+                            <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
+                                <img src="<?= base_url('images/team/1.jpg') ?>" style="width:90%;" class="rounded">
+                            </div>
+                            <div class="py-2">
+                                <div class="bg-color1 rounded mx-2 d-flex justify-content-center align-items-center" style="width:90%;height:40px;">
+                                    <p class="ls-s fw-900 text-center text-center text-color2 m-0 lh-1 mt-2 mb-2 text-resp">Abbrogivani Febriano Zackharie Fiarman</p>
+                                </div>
+                            </div>
+                        <div class="bg-color1 rounded-bottom" style="height:10px;"></div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-6 col-md-3 m-0 p-0 d-flex justify-content-center align-items-center">
+                    <div class="card mb-0 my-4 bg-color2 mt-2 shadow" style="width:95%;">
+                        <div class="bg-color1 rounded-top" style="height:10px;"></div>
+                            <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
+                                <img src="<?= base_url('images/team/2.jpg') ?>" style="width:90%;" class="rounded">
+                            </div>
+                            <div class="py-2">
+                                <div class="bg-color1 rounded mx-2 d-flex justify-content-center align-items-center" style="width:90%;height:40px;">
+                                    <p class="ls-s fw-900 text-center text-center text-color2 m-0 lh-1 mt-2 mb-2 text-resp">Adelia Sabrina Gunawan</p>
+                                </div>
+                            </div>
+                        <div class="bg-color1 rounded-bottom" style="height:10px;"></div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-6 col-md-3 m-0 p-0 d-flex justify-content-center align-items-center">
+                    <div class="card mb-0 my-4 bg-color2 mt-2 shadow" style="width:95%;">
+                        <div class="bg-color1 rounded-top" style="height:10px;"></div>
+                            <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
+                                <img src="<?= base_url('images/team/3.jpg') ?>" style="width:90%;" class="rounded">
+                            </div>
+                            <div class="py-2">
+                                <div class="bg-color1 rounded mx-2 d-flex justify-content-center align-items-center" style="width:90%;height:40px;">
+                                    <p class="ls-s fw-900 text-center text-center text-color2 m-0 lh-1 mt-2 mb-2 text-resp">Cahyo Ilham Firmansyah</p>
+                                </div>
+                            </div>
+                        <div class="bg-color1 rounded-bottom" style="height:10px;"></div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-6 col-md-3 m-0 p-0 d-flex justify-content-center align-items-center">
+                    <div class="card mb-0 my-4 bg-color2 mt-2 shadow" style="width:95%;">
+                        <div class="bg-color1 rounded-top" style="height:10px;"></div>
+                            <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
+                                <img src="<?= base_url('images/team/4.png') ?>" style="width:90%;" class="rounded">
+                            </div>
+                            <div class="py-2">
+                                <div class="bg-color1 rounded mx-2 d-flex justify-content-center align-items-center" style="width:90%;height:40px;">
+                                    <p class="ls-s fw-900 text-center text-center text-color2 m-0 lh-1 mt-2 mb-2 text-resp">Dien Wahida Putri</p>
+                                </div>
+                            </div>
+                        <div class="bg-color1 rounded-bottom" style="height:10px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section>
 <div class="row bg-color1 p-0 m-0" style="width:100%;height:100vh">
 <div class="col-md-6 d-flex justify-content-center align-items-center d-none d-sm-flex">
     <img src="<?= base_url('images/il-login.png') ?>" alt="login" style="width: 50%;">
