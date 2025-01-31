@@ -49,7 +49,6 @@
 
     <div class="row">
         <div class="col-md-3">
-            <!-- Input file pertama -->
             <div class="custom-file-wrapper">
                 <label for="file-upload" class="custom-file-label <?= session('errors.setoran-dokumentasi') ? 'border-invalid' : '' ?>">Upload dokumentasi</label>
                 <input name="setoran-dokumentasi" id="file-upload" type="file" class="custom-file-input <?= session('errors.setoran-dokumentasi') ? 'is-invalid' : '' ?>" accept="image/*" onchange="updateFileName('file-upload')">
