@@ -46,7 +46,7 @@
 <?php if(session()->get('status') == 'login-user') : ?>
 <a href="<?= base_url('user') ?>" class="text-color1 bg-color2 px-2 fw-bold shadow" style="position:fixed;bottom:7px;left:7px;z-index:99;letter-spacing:-1px;border-radius:30px;text-decoration:none;">Anda sedang login <i class="fas fa-check-circle"></i></a>
 <?php else : ?>
-<a href="<?= base_url('sign-in-user') ?>" class="text-danger bg-color2 px-2 fw-bold shadow" style="position:fixed;bottom:7px;left:7px;z-index:99;letter-spacing:-1px;border-radius:30px;text-decoration:none;">Anda telah login <i class="fas fa-exclamation-circle"></i></a>
+<a href="<?= base_url('sign-in-user') ?>" class="text-danger bg-color2 px-2 fw-bold shadow" style="position:fixed;bottom:7px;left:7px;z-index:99;letter-spacing:-1px;border-radius:30px;text-decoration:none;">Anda belum login <i class="fas fa-exclamation-circle"></i></a>
 <?php endif; ?>
 
 <style>

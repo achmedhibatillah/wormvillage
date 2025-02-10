@@ -1,15 +1,20 @@
-<section class="bg-web-100vh bg-web-100vh-guest d-flex justify-content-center" style="position:relative;background-image: url('<?= base_url('images/bg-lp-top-guest.jpg') ?>'); height:100vh;">
+<section id="background-section" class="bg-web-100vh bg-web-100vh-guest d-flex justify-content-center" style="position:relative;background-image: url('<?= base_url('images/bg-lp-top-guest.jpg') ?>'); height:100vh;">
 
-<div class="" style="margin-top: 160px;">
-    <div class="d-flex justify-content-center pt-3">
-        <img src="<?= base_url('images/logo-circle-color2.png') ?>" alt="ecoworm" style="width:155px;">
-    </div>
-    <div class="text-color2">
-        <h1 class="fw-bold fst-italic text-center text-tahoma" style="font-size:70px;letter-spacing:-2px;">wormvillage</h1>
-        <h5 class="fw-bold text-center" style="font-size:23px;margin-top:-10px;letter-spacing:-1px;">Pengelola Sampah Organik</h5>
-        <p class="fw-light text-center" style="font-size:17px;margin-top:-10px;"><i class="fas fa-map-marker-alt" style="margin-right:3px;"></i> Sumber Brantas, Bumiaji, Batu</p>
-        <div class="d-flex justify-content-center align-items-center">
-            <a href="<?= base_url('sign-in-user') ?>" class="btn btn-sm btn-color2-transparent px-3">Login</a>
+<div class="row w-100">
+    <div class="col-md-6 m-0 p-0"></div>
+    <div class="col-md-6 m-0 p-0 d-flex justify-content-center align-items-center">
+        <div class="mt-5 mt-md-3">
+            <div class="d-flex justify-content-center pt-3">
+                <img src="<?= base_url('images/logo-circle-color2.png') ?>" alt="ecoworm" style="width:155px;">
+            </div>
+            <div class="text-color2">
+                <h1 class="fw-bold fst-italic text-center text-tahoma" style="font-size:70px;letter-spacing:-2px;">wormvillage</h1>
+                <h5 class="fw-bold text-center" style="font-size:23px;margin-top:-10px;letter-spacing:-1px;">Pengelola Sampah Organik</h5>
+                <p class="fw-light text-center" style="font-size:17px;margin-top:-10px;"><i class="fas fa-map-marker-alt" style="margin-right:3px;"></i> Sumber Brantas, Bumiaji, Batu</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="<?= base_url('sign-in-user') ?>" class="btn btn-sm btn-color2-transparent px-3">Login</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -41,95 +46,7 @@
 </div>
 </section>
 
-<section id="our-team" class="d-flex justify-content-center align-items-center bg-color2" style="min-height:100vh;">
-<div class="row m-0 p-0 d-flex justify-content-center align-items-center">
-    <div class="col-12 col-md-9 m-0 p-0 d-flex justify-content-center align-items-center">
-        <div style="width:90%;" class="">
-            <div class="row m-0 p-0 pb-2 px-4 justify-content-center">
-                <div class="d-flex justify-content-center align-items-center">
-                    <h1 class="ls-xxs fw-900 text-center text-md-start text-color1">Our Team</h1>
-                </div>
-                <!--  -->
-                <div class="col-6 col-md-3 m-0 p-0 d-flex justify-content-center align-items-center">
-                    <div class="card mb-0 my-4 bg-color2 mt-2 shadow" style="width:95%;">
-                        <div class="bg-color1 rounded-top" style="height:10px;"></div>
-                            <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
-
-                                <img src="<?= base_url('images/team/1.jpg') ?>" style="width:90%;" class="rounded">
-                            </div>
-                            <div class="py-2">
-                                <div class="bg-color1 rounded mx-2 d-flex justify-content-center align-items-center" style="width:90%;height:40px;">
-                                    <p class="ls-s fw-900 text-center text-center text-color2 m-0 lh-1 mt-2 mb-2 text-resp">Abbrogivani Febriano Zackharie Fiarman</p>
-                                </div>
-                            </div>
-                        <div class="bg-color1 rounded-bottom" style="height:10px;"></div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-6 col-md-3 m-0 p-0 d-flex justify-content-center align-items-center">
-                    <div class="card mb-0 my-4 bg-color2 mt-2 shadow" style="width:95%;">
-                        <div class="bg-color1 rounded-top" style="height:10px;"></div>
-                            <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
-
-                                <img src="<?= base_url('images/team/2.jpg') ?>" style="width:90%;" class="rounded">
-                            </div>
-                            <div class="py-2">
-                                <div class="bg-color1 rounded mx-2 d-flex justify-content-center align-items-center" style="width:90%;height:40px;">
-                                    <p class="ls-s fw-900 text-center text-center text-color2 m-0 lh-1 mt-2 mb-2 text-resp">Adelia Sabrina Gunawan</p>
-                                </div>
-                            </div>
-                        <div class="bg-color1 rounded-bottom" style="height:10px;"></div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-6 col-md-3 m-0 p-0 d-flex justify-content-center align-items-center">
-                    <div class="card mb-0 my-4 bg-color2 mt-2 shadow" style="width:95%;">
-                        <div class="bg-color1 rounded-top" style="height:10px;"></div>
-                            <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
-
-                                <img src="<?= base_url('images/team/3.jpg') ?>" style="width:90%;" class="rounded">
-                            </div>
-                            <div class="py-2">
-                                <div class="bg-color1 rounded mx-2 d-flex justify-content-center align-items-center" style="width:90%;height:40px;">
-                                    <p class="ls-s fw-900 text-center text-center text-color2 m-0 lh-1 mt-2 mb-2 text-resp">Cahyo Ilham Firmansyah</p>
-                                </div>
-                            </div>
-                        <div class="bg-color1 rounded-bottom" style="height:10px;"></div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-6 col-md-3 m-0 p-0 d-flex justify-content-center align-items-center">
-                    <div class="card mb-0 my-4 bg-color2 mt-2 shadow" style="width:95%;">
-                        <div class="bg-color1 rounded-top" style="height:10px;"></div>
-                            <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
-                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
-
-                                <img src="<?= base_url('images/team/4.png') ?>" style="width:90%;" class="rounded">
-                            </div>
-                            <div class="py-2">
-                                <div class="bg-color1 rounded mx-2 d-flex justify-content-center align-items-center" style="width:90%;height:40px;">
-                                    <p class="ls-s fw-900 text-center text-center text-color2 m-0 lh-1 mt-2 mb-2 text-resp">Dien Wahida Putri</p>
-                                </div>
-                            </div>
-                        <div class="bg-color1 rounded-bottom" style="height:10px;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+<?= $this->include('section/our-team') ?>
 
 <section>
 <div class="row bg-color1 p-0 m-0" style="width:100%;height:100vh">
