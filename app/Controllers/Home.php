@@ -20,7 +20,7 @@ class Home extends BaseController
         $status = [
             'page' => 'home',
             'judul' => 'Home'
-        ];
+        ]; 
 
         $reward = new RewardGolonganModel();
         $rewardall = $reward->getAllReward();

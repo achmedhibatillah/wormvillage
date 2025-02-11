@@ -1,8 +1,19 @@
-<section id="background-section" class="bg-web-100vh bg-web-100vh-guest d-flex justify-content-center" style="position:relative;background-image: url('<?= base_url('images/bg-lp-top-guest.jpg') ?>'); height:100vh;">
+<section id="background-section" class="bg-web-100vh bg-web-100vh-guest d-flex justify-content-center" style="position:relative;background-image: url('<?= base_url('images/bg-lp-top-guest.jpg') ?>'); min-height:100vh;">
 
 <div class="row w-100">
-    <div class="col-md-6 m-0 p-0"></div>
-    <div class="col-md-6 m-0 p-0 d-flex justify-content-center align-items-center">
+    <div class="col-md-6 m-0 p-0 order-2 order-md-1 d-flex justify-content-center align-items-center">
+        <div class="card bg-color3 border-clr2" style="width: 18rem;">
+            <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height:200px;">
+                <img src="<?= base_url('images/berita/launching.png') ?>" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body text-color2">
+                <h5 class="card-title ls-s">Judul Berita</h5>
+                <p class="card-text lh-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-color2 btn-sm px-2">Baca selengkapnya</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 m-0 p-0 order-1 order-md-2 d-flex justify-content-center align-items-center">
         <div class="mt-5 mt-md-3">
             <div class="d-flex justify-content-center pt-3">
                 <img src="<?= base_url('images/logo-circle-color2.png') ?>" alt="ecoworm" style="width:155px;">
