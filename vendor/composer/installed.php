@@ -1,15 +1,24 @@
 <?php return array(
     'root' => array(
         'name' => 'codeigniter4/framework',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'a84342d6ed6160f33105a5a36fb776f38737b488',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'ckeditor/ckeditor' => array(
+            'pretty_version' => '4.25.1',
+            'version' => '4.25.1.0',
+            'reference' => '3fa1987d35342526e4eb2e64f6ec7172561b7328',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ckeditor/ckeditor',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'clue/ndjson-react' => array(
             'pretty_version' => 'v1.3.0',
             'version' => '1.3.0.0',
@@ -29,9 +38,9 @@
             'dev_requirement' => true,
         ),
         'codeigniter4/framework' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'a84342d6ed6160f33105a5a36fb776f38737b488',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

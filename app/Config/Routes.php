@@ -35,6 +35,9 @@ $routes->post('reward-a-barang', 'Root::reward_a_barang', ['filter' => 'admin-au
 $routes->post('reward-u-barang/(:num)', 'Root::reward_u_barang/$1', ['filter' => 'admin-auth']);
 $routes->get('reward-d-barang/(:num)/(:num)', 'Root::reward_d_barang/$1/$2', ['filter' => 'admin-auth']);
 
+$routes->get('manajemen-konten', 'Root::konten', ['filter' => 'admin-auth']);
+$routes->get('edit-about-us', 'Root::edit_aboutus', ['filter' => 'admin-auth']);
+
 //Admin :
 
 $routes->get('dashboard', 'Admin::index', ['filter' => 'admin-auth']);

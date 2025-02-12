@@ -35,7 +35,7 @@
     </div>
     <!-- Toggler and User Icon -->
     <div class="d-flex align-items-center justify-content-between order-2" id="btn-nav">
-      <a href="<?= base_url('sign-in-user') ?>" id="user-icon" class="me-auto"><i class="fas fa-user text-color2"></i></a>
+      <a href="<?= base_url('sign-in-user') ?>" id="user-icon" class="me-auto td-none text-color2 px-3 ls-s">Login</a>
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
         <i class="fas fa-bars text-color1"></i>
       </button>
@@ -73,7 +73,7 @@
 }
 #user-icon {
     background-color: var(--color-1);
-    border-radius: 50%;
+    border-radius: 12px;
     aspect-ratio: 1 / 1;
     height: 25px;
     font-size: 15px;

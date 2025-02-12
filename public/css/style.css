@@ -52,6 +52,12 @@
 .lh-s { line-height: 1; }
 .lh-xs { line-height: 0.8; }
 
+.cursor-pointer { cursor: pointer !important; }
+
+.shadow-m { box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
+
+.td-none { text-decoration: none !important; }
+
 .fw-800 { font-weight:800; }
 .fw-900 { font-weight:900; }
 

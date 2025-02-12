@@ -38,6 +38,10 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!-- CKEditor -->
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.css" />
+    <script src="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.umd.js"></script>
+
     <!-- Internal CSS -->
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 

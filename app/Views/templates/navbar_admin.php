@@ -1,6 +1,6 @@
 <div class="row">
 
-<div class="col-md-3 bg-color1 pb-5" id="navbar-admin">
+<div class="col-md-3 bg-color1 pb-5 overflow-y-scroll" style="height:100vh;" id="navbar-admin">
 
     <!-- Logo -->
     <div class="d-flex justify-content-center align-items-center mt-3">
@@ -88,6 +88,15 @@
         <?php if (session('admin_username') == 'root'): ?>
             <a href="<?= base_url('root') ?>" class="btn text-start mt-2 <?= ($page == 'root') ? 'btn-color3-sec' : 'btn-color3' ?>" style="width:250px;">
                 <i class="fas fa-user-cog me-2"></i> Manajemen Admin
+            </a>
+        <?php endif; ?>
+    </div>
+
+    <!-- Manajemen Konten (Root) -->
+    <div class="mt-2 d-flex justify-content-center align-items-center">
+        <?php if (session('admin_username') == 'root'): ?>
+            <a href="<?= base_url('manajemen-konten') ?>" class="btn text-start mt-2 <?= ($page == 'konten') ? 'btn-color3-sec' : 'btn-color3' ?>" style="width:250px;">
+                <i class="fas fa-file-alt me-2"></i> Manajemen Konten
             </a>
         <?php endif; ?>
     </div>

@@ -1,8 +1,8 @@
-<section id="background-section" class="bg-web-100vh bg-web-100vh-guest d-flex justify-content-center" style="position:relative;background-image: url('<?= base_url('images/bg-lp-top-guest.jpg') ?>'); min-height:100vh;">
+<section id="background-section" class="bg-web-100vh bg-web-100vh-guest d-flex justify-content-center" style="position:relative;background-image: url('<?= base_url('images/bg-lp-top-guest.png') ?>'); min-height:100vh;">
 
 <div class="row w-100">
-    <div class="col-md-6 m-0 p-0 order-2 order-md-1 d-flex justify-content-center align-items-center">
-        <div class="card bg-color3 border-clr2" style="width: 18rem;">
+    <div class="col-md-6 m-0 p-0 order-2 d-flex justify-content-center align-items-center">
+        <div class="card bg-color3 border-clr2" style="width: 18rem;margin:100px 0;">
             <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height:200px;">
                 <img src="<?= base_url('images/berita/launching.png') ?>" class="card-img-top" alt="...">
             </div>
@@ -13,13 +13,13 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6 m-0 p-0 order-1 order-md-2 d-flex justify-content-center align-items-center">
+    <div class="col-md-6 m-0 p-0 pt-5 pt-md-0 order-1 d-flex justify-content-center align-items-center">
         <div class="mt-5 mt-md-3">
             <div class="d-flex justify-content-center pt-3">
                 <img src="<?= base_url('images/logo-circle-color2.png') ?>" alt="ecoworm" style="width:155px;">
             </div>
             <div class="text-color2">
-                <h1 class="fw-bold fst-italic text-center text-tahoma" style="font-size:70px;letter-spacing:-2px;">wormvillage</h1>
+                <h1 class="fw-bold fst-italic text-center text-tahoma" style="font-size:60px;letter-spacing:-2px;">wormvillage</h1>
                 <h5 class="fw-bold text-center" style="font-size:23px;margin-top:-10px;letter-spacing:-1px;">Pengelola Sampah Organik</h5>
                 <p class="fw-light text-center" style="font-size:17px;margin-top:-10px;"><i class="fas fa-map-marker-alt" style="margin-right:3px;"></i> Sumber Brantas, Bumiaji, Batu</p>
                 <div class="d-flex justify-content-center align-items-center">
@@ -41,16 +41,7 @@
     <div class="my-5">
         <h1 class="ls-xxs fw-900 text-center text-md-start">About Us</h1>
         <div class="card m-0 p-0 py-2 px-3 ms-3 me-5 bg-color1">
-            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start">EcoWorm adalah inisiatif sosial berbasis circular economy yang berfokus pada pengelolaan sampah organik melalui budidaya cacing untuk meningkatkan kesuburan tanah dan produktivitas pertanian. Kami hadir untuk memberikan solusi inovatif terhadap permasalahan lingkungan, khususnya dalam mengurangi timbunan sampah organik yang belum terkelola dengan baik serta meningkatkan kualitas tanah pertanian melalui pupuk kascing.</p>
-        </div>
-        <div class="card m-0 p-0 py-2 px-3 ms-5 me-3 bg-color3 mt-2">
-            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start">Dengan mengusung pendekatan berbasis komunitas, EcoWorm melibatkan berbagai pihak, termasuk masyarakat desa, petani, kelompok tani (Gapoktan), akademisi, dan relawan. Kami percaya bahwa pengelolaan lingkungan yang baik harus dimulai dari kesadaran dan partisipasi aktif masyarakat. Oleh karena itu, kami tidak hanya menyediakan solusi teknis dalam bentuk sistem pengolahan sampah, tetapi juga melakukan edukasi dan pendampingan bagi masyarakat agar dapat mengelola sampah secara mandiri dan berkelanjutan.</p>
-        </div>
-        <div class="card m-0 p-0 py-2 px-3 ms-3 me-5 bg-color1 mt-2">
-            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start">Sebagai organisasi sosial, kami juga mengintegrasikan teknologi dalam setiap tahap implementasi proyek. Dengan adanya platform monitoring digital, kami memastikan bahwa setiap proses pengelolaan sampah dan produksi pupuk kascing dapat dipantau secara transparan dan akurat. Hal ini memungkinkan semua pihak yang terlibat, termasuk pemerintah desa, untuk mendapatkan data real-time mengenai perkembangan proyek.</p>
-        </div>
-        <div class="card m-0 p-0 py-2 px-3 ms-5 me-3 bg-color3 mt-2">
-            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start">Saat ini, EcoWorm tengah berfokus pada implementasi program di Desa Sumberbrantas, Kota Batu, dengan harapan dapat direplikasi ke wilayah lain yang menghadapi tantangan serupa. Kami berkomitmen untuk terus berinovasi dalam menciptakan solusi ramah lingkungan yang dapat memberikan dampak sosial dan ekonomi bagi masyarakat.</p>
+            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start"><?= $aboutus ?></p>
         </div>
     </div>
 </div>

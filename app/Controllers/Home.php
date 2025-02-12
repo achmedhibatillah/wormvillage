@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\RewardGolonganModel;
 use App\Models\TrafficModel;
+use App\Models\HeroModel;
 
 class Home extends BaseController
 {
@@ -28,11 +29,15 @@ class Home extends BaseController
         foreach ($rewardall as $reward) {
             $groupedRewards[$reward['reward_golongan_id']][$reward['reward_golongan_berat']][] = $reward;
         }
+
+        $heroModel = new HeroModel();
+        $aboutus = $heroModel->find(1);
     
         return 
             view('templates/header', $status) .
             view('templates/navbar_guest') .
             view('guest/index', [
+                'aboutus' => $aboutus,
                 'groupedRewards' => $groupedRewards
             ]) .
             view('templates/footbar_guest') .

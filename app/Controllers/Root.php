@@ -6,6 +6,8 @@ use App\Models\AdminModel;
 use App\Models\RewardBarangModel;
 use App\Models\RewardGolonganModel;
 use App\Models\TrafficModel;
+use App\Models\HeroModel;
+
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Root extends BaseController
@@ -343,4 +345,48 @@ class Root extends BaseController
         return redirect()->to('edit-reward/' . $golonganId);
     }
     
+    public function konten(): mixed
+    {
+        $session = session();
+        if ($session->get('admin_username') !== 'root') {
+            return redirect()->to('dashboard');
+        }
+
+        $status = [
+            'page' => 'konten',
+            'judul' => 'Manajemen Konten'
+        ];
+
+        return 
+        view('templates/header', $status) .
+        view('templates/navbar_admin', $status) .
+        view('admin/root-index') .
+        view('templates/footbar_admin') .
+        view('templates/footer');
+    }
+
+    public function edit_aboutus(): mixed
+    {
+        $session = session();
+        if ($session->get('admin_username') !== 'root') {
+            return redirect()->to('dashboard');
+        }
+
+        $status = [
+            'page' => 'konten',
+            'judul' => 'Edit About Us'
+        ];
+
+        $heroModel = new HeroModel();
+        $hero = $heroModel->find(1);
+
+        return 
+        view('templates/header', $status) .
+        view('templates/navbar_admin', $status) .
+        view('admin/root-edit-about-us', [
+            'hero' => $hero
+        ]) .
+        view('templates/footbar_admin') .
+        view('templates/footer');
+    }
 }
