@@ -31,7 +31,10 @@ class Home extends BaseController
         }
 
         $heroModel = new HeroModel();
-        $aboutus = $heroModel->find(1);
+        $aboutusData = $heroModel->find(1)['hero_isi'];
+
+        preg_match('/<p>(.*?)<\/p>/', $aboutusData, $matches);
+        $aboutus = isset($matches[0]) ? $matches[0] : '';
     
         return 
             view('templates/header', $status) .

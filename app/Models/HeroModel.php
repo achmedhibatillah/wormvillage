@@ -13,7 +13,7 @@ class HeroModel extends Model
         'hero_isi',
         'created_at',
         'updated_at'
-    ];
+    ]; 
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

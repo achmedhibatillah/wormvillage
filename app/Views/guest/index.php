@@ -33,18 +33,21 @@
 </section>
 
 <section id="about-us">
-<div class="row m-0 p-0 bg-color2" style="min-height:100vh;">
-<div class="col-md-4 m-0 p-0 d-flex justify-content-center align-items-center">
-    <img src="<?= base_url('images/about-us.png') ?>" style="width:310px;" class="mt-5 mt-md-0">
-</div>
-<div class="col-md-8 m-0 p-0 text-color1 d-flex justify-content-center align-items-center">
-    <div class="my-5">
-        <h1 class="ls-xxs fw-900 text-center text-md-start">About Us</h1>
-        <div class="card m-0 p-0 py-2 px-3 ms-3 me-5 bg-color1">
-            <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start"><?= $aboutus ?></p>
+<div class="row justify-content-center m-0 p-0 bg-color2" style="min-height:100vh;">
+    <div class="row col-md-10 m-0 p-0">
+        <div class="col-md-4 m-0 p-0 d-flex justify-content-center align-items-center">
+            <img src="<?= base_url('images/about-us.png') ?>" style="width:310px;" class="mt-5 mt-md-0">
+        </div>
+        <div class="col-md-8 m-0 p-0 text-color1 d-flex justify-content-center align-items-center">
+            <div class="my-3">
+                <h1 class="ls-xxs fw-900 text-center text-md-start">About Us</h1>
+                <div class="card m-0 p-0 py-2 px-3 ms-2 ms-md-3 me-2 me-md-5 bg-color2">
+                    <p class="ls-s m-0 text-color2 fsz-15 text-center text-md-start"><?= $aboutus ?></p>
+                    <a href="<?= base_url('about-us') ?>" class="btn btn-color1 px-3" style="margin-top:-20px;">Selengkapnya</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 </div>
 </section>
 

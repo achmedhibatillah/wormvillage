@@ -389,4 +389,16 @@ class Root extends BaseController
         view('templates/footbar_admin') .
         view('templates/footer');
     }
+
+    public function save_aboutus()
+    {
+        $update = [
+            'hero_isi' => $this->request->getPost('hero_isi'),
+        ];
+
+        $heroModel = new HeroModel();
+        $heroModel->update(1, $update);
+
+        return redirect()->back()->with('success-save', 'Anda berhasil menyimpan pembaharuan data!');
+    }
 }

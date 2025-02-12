@@ -37,6 +37,7 @@ $routes->get('reward-d-barang/(:num)/(:num)', 'Root::reward_d_barang/$1/$2', ['f
 
 $routes->get('manajemen-konten', 'Root::konten', ['filter' => 'admin-auth']);
 $routes->get('edit-about-us', 'Root::edit_aboutus', ['filter' => 'admin-auth']);
+$routes->post('simpan-pembaharuan-about-us', 'Root::save_aboutus', ['filter' => 'admin-auth']);
 
 //Admin :
 
@@ -61,6 +62,10 @@ $routes->post('peserta-a', 'Admin::peserta_a', ['filter' => 'admin-auth']);
 $routes->get('peserta-a', 'Admin::peserta_a', ['filter' => 'admin-auth']);
 $routes->post('peserta-e/(:num)', 'Admin::peserta_e/$1', ['filter' => 'admin-auth']);
 $routes->get('peserta-d/(:num)', 'Admin::peserta_d/$1', ['filter' => 'admin-auth']);
+
+$routes->get('atur-berita', 'Berita::index', ['filter' => 'admin-auth']);
+$routes->get('tambah-berita', 'Berita::tambah', ['filter' => 'admin-auth']);
+$routes->post('simpan-berita', 'Berita::simpan', ['filter' => 'admin-auth']);
 
 $routes->get('analitik', 'Admin::analitik', ['filter' => 'admin-auth']);
 $routes->get('analitik/download-analisis-bulanan/(:num)/(:num)', 'Admin::analitik_download_analisisbulanan/$1/$2', ['filter' => 'admin-auth']);

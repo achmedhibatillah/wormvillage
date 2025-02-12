@@ -65,6 +65,13 @@
         </a>
     </div>
 
+    <!-- Tambah Berita -->
+    <div class="mt-2 d-flex justify-content-center align-items-center">
+        <a href="<?= base_url('atur-berita') ?>" class="btn text-start mt-2 <?= ($page == 'berita') ? 'btn-color3-sec' : 'btn-color3' ?>" style="width:250px;">
+            <i class="fas fa-newspaper me-2"></i> Berita
+        </a>
+    </div>
+
     <!-- Aturan Reward -->
     <?php if (session('admin_username') !== 'root'): ?>
     <div class="mt-2 d-flex justify-content-center align-items-center">
