@@ -24,9 +24,7 @@ class Berita extends BaseController
         ]; 
 
         $beritaModel = new BeritaModel();
-        $berita = $beritaModel->findAll();
-        
-        dd(session()->get());
+        $berita = $beritaModel->orderBy('created_at', 'DESC')->findAll();
     
         return 
             view('templates/header', $status) .
@@ -49,6 +47,24 @@ class Berita extends BaseController
             view('templates/header', $status) .
             view('templates/navbar_admin') .
             view('admin/berita-tambah') .
+            view('templates/footbar_admin') .
+            view('templates/footer');
+    }
+
+    public function lihat($berita_id): string
+    {
+        $status = [
+            'page' => 'berita',
+            'judul' => 'Lihat Detail Berita'
+        ]; 
+
+        $beritaModel = new BeritaModel();
+        $beritaModel->find();
+        
+        return 
+            view('templates/header', $status) .
+            view('templates/navbar_admin') .
+            view('admin/berita-detail') .
             view('templates/footbar_admin') .
             view('templates/footer');
     }
@@ -124,14 +140,25 @@ class Berita extends BaseController
         
         $admin_username = session()->get('admin_username');
 
+        $beritaModel = new BeritaModel();
+
+        $judul = $this->request->getPost('berita_judul');
+        $slug = url_title($judul, '-', true);
+        $slugAsli = $slug;
+        $i = 1;
+        while ($beritaModel->where('berita_slug', $slug)->first()) {
+            $slug = $slugAsli . '-' . $i;
+            $i++;
+        }
+
         $save = [
             'berita_judul' => $this->request->getPost('berita_judul'),
             'berita_gambar' => $filePath,
             'berita_isi' => $this->request->getPost('berita_isi'),
+            'berita_slug' => $slug,
             'admin_username' => $admin_username
         ];
 
-        $beritaModel = new BeritaModel();
         $beritaModel->insert($save);
 
         return redirect()->to('atur-berita')->with('success-berita', 'Berita baru berhasil ditambahkan.');

@@ -12,7 +12,8 @@ class BeritaModel extends Model
         'berita_judul',
         'berita_isi',
         'berita_gambar',
-        'admin_id',
+        'berita_slug',
+        'admin_username',
         'created_at',
         'updated_at'
     ]; 

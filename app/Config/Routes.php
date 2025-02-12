@@ -65,6 +65,7 @@ $routes->get('peserta-d/(:num)', 'Admin::peserta_d/$1', ['filter' => 'admin-auth
 
 $routes->get('atur-berita', 'Berita::index', ['filter' => 'admin-auth']);
 $routes->get('tambah-berita', 'Berita::tambah', ['filter' => 'admin-auth']);
+$routes->get('lihat-berita/(:segment)', 'Berita::lihat/$1', ['filter' => 'admin-auth']);
 $routes->post('simpan-berita', 'Berita::simpan', ['filter' => 'admin-auth']);
 
 $routes->get('analitik', 'Admin::analitik', ['filter' => 'admin-auth']);

@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<div class="w-100 mt-4">
+<div class="w-100 mt-4 overflow-x-scroll">
     <table class="table table-stripped">
         <thead class="table-dark">
             <tr>
@@ -36,7 +36,11 @@
                     <td><?= $x['berita_judul'] ?></td>
                     <td><?= $x['created_at'] ?></td>
                     <td><?= $x['updated_at'] ?></td>
-                    <td><?= $x['admin_username'] ?></td>
+                    <td>@<?= $x['admin_username'] ?></td>
+                    <td>
+                        <a href="<?= base_url('lihat-berita') ?>" class="he-30 we-35 justify-content-center btn btn-success btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="<?= base_url('hapus-berita') ?>" class="he-30 we-35 justify-content-center btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                    </td>
                 </tr>
             <?php $i++ ?>
             <?php endforeach; ?>
