@@ -1,19 +1,53 @@
 <section id="background-section" class="bg-web-100vh bg-web-100vh-guest d-flex justify-content-center" style="position:relative;background-image: url('<?= base_url('images/bg-lp-top-guest.png') ?>'); min-height:100vh;">
 
 <div class="row w-100">
-    <div class="col-md-6 m-0 p-0 order-2 d-flex justify-content-center align-items-center">
-        <div class="card bg-color3 border-clr2" style="width: 18rem;margin:100px 0;">
-            <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height:200px;">
-                <img src="<?= base_url('images/berita/launching.png') ?>" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body text-color2">
-                <h5 class="card-title ls-s">Judul Berita</h5>
-                <p class="card-text lh-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-color2 btn-sm px-2">Baca selengkapnya</a>
+    <div class="mb-md-5"></div>
+    <div class="col-lg-6 row m-0 p-0 pt-5 pt-md-0 pb-5 pb-md-0 order-2">
+        <?php if (isset($berita[0])): ?>
+        <div class="col-md-6 m-0 mt-5 mt-md-0 d-flex justify-content-center justify-content-md-end justify-content-center-lg-center align-items-center">
+            <div class="card bg-color3 m-0 border-clr2" style="width: 18rem;">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height:200px;">
+                    <?php if ($berita[0]['berita_gambar']): ?>
+                        <img src="<?= base_url($berita[0]['berita_gambar']) ?>" class="card-img-top" alt="...">
+                    <?php else: ?>
+                        <img src="<?= base_url('images/berita/blank.png') ?>" class="card-img-top" alt="...">
+                    <?php endif; ?>
+                </div>
+                <div class="card-body text-color2">
+                    <div class="" style="height:70px;">
+                        <h5 class="card-title ls-s lh-1"><?= $berita[0]['berita_judul'] ?></h5>
+                    </div>
+                    <p class="card-text lh-1"><?= $berita[0]['berita_isi'] ?></p>
+                    <a href="<?= base_url( 'berita/' . $berita[0]['berita_slug']) ?>" class="btn btn-color2 btn-sm px-2">Baca selengkapnya</a>
+                </div>
             </div>
         </div>
+        <?php endif; ?>
+        <?php if (isset($berita[1])): ?>
+        <div class="col-md-6 m-0 mt-5 mt-md-0 d-flex justify-content-center justify-content-md-start justify-content-center-lg-center align-items-center">
+            <div class="card bg-color3 m-0 border-clr2" style="width: 18rem;">
+                <div class="d-flex justify-content-center align-items-center overflow-hidden" style="height:200px;">
+                    <?php if ($berita[1]['berita_gambar']): ?>
+                        <img src="<?= base_url($berita[1]['berita_gambar']) ?>" class="card-img-top" alt="...">
+                    <?php else: ?>
+                        <img src="<?= base_url('images/berita/blank.png') ?>" class="card-img-top" alt="...">
+                    <?php endif; ?>
+                </div>
+                <div class="card-body text-color2">
+                    <div class="" style="height:70px;">
+                        <h5 class="card-title ls-s lh-1"><?= $berita[1]['berita_judul'] ?></h5>
+                    </div>
+                    <p class="card-text lh-1"><?= $berita[1]['berita_isi'] ?></p>
+                    <a href="<?= base_url( 'berita/' . $berita[1]['berita_slug']) ?>" class="btn btn-color2 btn-sm px-2">Baca selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
+        <div class="d-flex justify-content-center mt-5 mt-md-4 mb-5">
+            <a href="<?= base_url('berita') ?>" class="btn btn-color2 he-40" style="width:190px;">Lihat berita lain</a>
+        </div>
     </div>
-    <div class="col-md-6 m-0 p-0 pt-5 pt-md-0 order-1 d-flex justify-content-center align-items-center">
+    <div class="col-lg-6 m-0 p-0 pt-5 pt-md-0 order-1 d-flex justify-content-center align-items-center">
         <div class="mt-5 mt-md-3">
             <div class="d-flex justify-content-center pt-3">
                 <img src="<?= base_url('images/logo-circle-color2.png') ?>" alt="ecoworm" style="width:155px;">

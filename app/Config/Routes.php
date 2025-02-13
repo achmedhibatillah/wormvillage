@@ -11,6 +11,10 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/', 'Home::index');
 
+$routes->get('berita', 'Berita::berita'); 
+$routes->get('berita/(:segment)', 'Berita::detail/$1');
+$routes->get('about-us', 'Home::aboutus'); 
+
 // Auth :
 
 $routes->get('sign-in-user', 'Auth::user_signin');
@@ -66,7 +70,9 @@ $routes->get('peserta-d/(:num)', 'Admin::peserta_d/$1', ['filter' => 'admin-auth
 $routes->get('atur-berita', 'Berita::index', ['filter' => 'admin-auth']);
 $routes->get('tambah-berita', 'Berita::tambah', ['filter' => 'admin-auth']);
 $routes->get('lihat-berita/(:segment)', 'Berita::lihat/$1', ['filter' => 'admin-auth']);
+$routes->get('hapus-berita/(:num)', 'Berita::hapus/$1', ['filter' => 'admin-auth']);
 $routes->post('simpan-berita', 'Berita::simpan', ['filter' => 'admin-auth']);
+$routes->post('update-berita', 'Berita::update', ['filter' => 'admin-auth']);
 
 $routes->get('analitik', 'Admin::analitik', ['filter' => 'admin-auth']);
 $routes->get('analitik/download-analisis-bulanan/(:num)/(:num)', 'Admin::analitik_download_analisisbulanan/$1/$2', ['filter' => 'admin-auth']);

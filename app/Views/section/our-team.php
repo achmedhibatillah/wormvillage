@@ -7,7 +7,7 @@
                     <h1 class="ls-xxs fw-900 text-center bg-color2 text-color1 rounded px-3 m-0 mt-4 mb-4 fsz-48">Our Team</h1>
                 </div>
                 <!--  -->
-                <div class="col-6 col-md-2 m-0 p-0 d-flex justify-content-center align-items-center">
+                <div class="col-6 col-md-4 col-lg-2 m-0 p-0 d-flex justify-content-center align-items-center">
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-6 col-md-2 m-0 p-0 d-flex justify-content-center align-items-center">
+                <div class="col-6 col-md-4 col-lg-2 m-0 p-0 d-flex justify-content-center align-items-center">
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-6 col-md-2 m-0 p-0 d-flex justify-content-center align-items-center">
+                <div class="col-6 col-md-4 col-lg-2 m-0 p-0 d-flex justify-content-center align-items-center">
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-6 col-md-2 m-0 p-0 d-flex justify-content-center align-items-center">
+                <div class="col-6 col-md-4 col-lg-2 m-0 p-0 d-flex justify-content-center align-items-center">
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-6 col-md-2 m-0 p-0 d-flex justify-content-center align-items-center">
+                <div class="col-6 col-md-4 col-lg-2 m-0 p-0 d-flex justify-content-center align-items-center">
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">

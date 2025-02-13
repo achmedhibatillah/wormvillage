@@ -66,6 +66,9 @@
 .fw-800 { font-weight:800; }
 .fw-900 { font-weight:900; }
 
+.img-death { pointer-events: none; user-drag: none; -webkit-user-drag: none; }
+  
+
 .bg-web-100vh { background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; }
 
 .bg-web-100vh-guest {

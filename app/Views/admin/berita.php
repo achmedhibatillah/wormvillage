@@ -3,7 +3,7 @@
         <form action="<?= base_url('atur-berita') ?>">
             <div class="row m-0 p-0">
                 <div class="col-11 m-0 p-0 pe-2">
-                    <input type="text" class="form-control he-30 fsz-15" placeholder="Cari berita ...">
+                    <input type="text" name="k" class="form-control he-30 fsz-15" placeholder="Cari berita ..." value="<?= ($k) ? $k : '' ?>">
                 </div>
                 <div class="col-1 m-0 p-0">
                     <button type="submit" class="he-30 btn btn-secondary d-flex align-items-center fsz-15"><i class="fas fa-search"></i></button>
@@ -38,8 +38,8 @@
                     <td><?= $x['updated_at'] ?></td>
                     <td>@<?= $x['admin_username'] ?></td>
                     <td>
-                        <a href="<?= base_url('lihat-berita') ?>" class="he-30 we-35 justify-content-center btn btn-success btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="<?= base_url('hapus-berita') ?>" class="he-30 we-35 justify-content-center btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                        <a href="<?= base_url('lihat-berita/') . $x['berita_slug'] ?>" class="he-30 we-35 justify-content-center btn btn-warning btn-sm"><i class="fas fa-pencil"></i></a>
+                        <a href="<?= base_url('hapus-berita/') . $x['berita_id'] ?>" class="he-30 we-35 justify-content-center btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
                     </td>
                 </tr>
             <?php $i++ ?>

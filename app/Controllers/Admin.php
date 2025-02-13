@@ -246,7 +246,7 @@ class Admin extends BaseController
             } else {
                 return redirect()->back()->with('error', 'Format file harus JPG, JPEG, atau PNG.');
             }
-        }
+        } 
     
         $setoranModel = new SetoranModel();
         $setoranModel->insert([
