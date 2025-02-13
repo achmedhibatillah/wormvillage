@@ -16,6 +16,9 @@
           <a class="nav-link ls-nav text-color1 <?= ($page == 'user') ? 'active' : '' ?>" aria-current="page" href="<?= base_url('user') ?>">Home</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link ls-nav text-color1 <?= ($page == 'berita') ? 'active' : '' ?>" href="<?= base_url('berita') ?>">Berita</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link ls-nav text-color1 <?= ($page == 'akun') ? 'active' : '' ?>" href="<?= base_url('#about-us') ?>"><i>About Us</i></a>
         </li>
         <li class="nav-item">

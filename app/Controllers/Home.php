@@ -6,6 +6,7 @@ use App\Models\BeritaModel;
 use App\Models\RewardGolonganModel;
 use App\Models\TrafficModel;
 use App\Models\HeroModel;
+use App\Models\SetoranModel;
 
 class Home extends BaseController
 {
@@ -47,6 +48,13 @@ class Home extends BaseController
                 'berita_gambar' => $berita['berita_gambar']
             ];
         }
+        
+        $setoranModel = new SetoranModel();
+        $setoranJumlahData = $setoranModel->selectSum('setoran_jumlah')->first();
+        
+        $setoran['setoran_total'] = number_format($setoranJumlahData['setoran_jumlah'], 2, ',', '.');
+        $setoran['setoran_metana'] = number_format(0.127 * $setoranJumlahData['setoran_jumlah'], 2, ',', '.');        
+        
     
         return 
             view('templates/header', $status) .
@@ -54,7 +62,8 @@ class Home extends BaseController
             view('guest/index', [
                 'berita' => $beritaFormatted,
                 'aboutus' => $aboutus,
-                'groupedRewards' => $groupedRewards
+                'groupedRewards' => $groupedRewards,
+                'setoran' => $setoran
             ]) .
             view('templates/footbar_guest') .
             view('templates/footer');
@@ -67,8 +76,9 @@ class Home extends BaseController
             'judul' => 'About Us'
         ]; 
 
-        $aboutusData = new HeroModel();
-        $aboutus = $aboutusData->find(1);
+        $heroModel = new HeroModel();
+        $heroData = $heroModel->find(1);
+        $aboutus = $heroData['hero_isi'];
 
         return 
         view('templates/header', $status) .

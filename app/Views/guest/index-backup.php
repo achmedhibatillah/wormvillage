@@ -70,17 +70,12 @@
     <div class="bg-color2 pt-5">
         <div class="mt-5"></div>
         <div class="row m-0 p-0 justify-content-center">
-            <div class="col-md-7 m-0 p-0 px-3 px-md-0 order-2 order-md-1 d-flex justify-content-center">
-                <div class="card m-0 text-color2 px-md-4 text-justify py-4 bg-color1" style="width:90%;">
-                    <h1 class="fw-800 mb-4 text-center text-md-start">Latar Belakang Proyek</h1>
-                    <div class="mx-3">
-                        <p>Desa Sumberbrantas, yang terletak di Kecamatan Bumiaji, Kota Batu, Jawa Timur, menghadapi tantangan besar dalam pengelolaan sampah dan keberlanjutan sektor pertaniannya. Sampah organik yang dihasilkan oleh masyarakat belum dikelola dengan baik, sehingga menumpuk dan berkontribusi terhadap pencemaran lingkungan. Dari total timbunan sampah harian di Kota Batu yang mencapai 102,7 ton, sekitar 47,11% berasal dari rumah tangga, namun infrastruktur pengelolaan sampah masih sangat terbatas. Akibatnya, banyak sampah yang berakhir di tempat pembuangan liar atau dibiarkan membusuk tanpa proses daur ulang yang efektif.</p>
-                        <p>Di sisi lain, sektor pertanian yang menjadi sumber penghidupan utama masyarakat juga mengalami penurunan produktivitas. Produktivitas apel, sebagai komoditas unggulan Desa Sumberbrantas, mengalami penurunan drastis dari 30 kg per pohon menjadi hanya 10 kg per pohon. Salah satu penyebab utama adalah rendahnya kadar C-organik dalam tanah, yang hanya sebesar 0,04%, jauh di bawah standar ideal untuk pertanian yang subur. Kondisi ini berdampak langsung pada kesejahteraan petani dan menurunkan daya saing hasil pertanian desa.</p>
-                    </div>
+            <div class="col-md-7 m-0 p-0 px-3 px-md-0">
+                <div class="text-color1">
+                    <h1 class="fw-800 mb-4">Latar Belakang Proyek</h1>
+                    <p>Desa Sumberbrantas, yang terletak di Kecamatan Bumiaji, Kota Batu, Jawa Timur, menghadapi tantangan besar dalam pengelolaan sampah dan keberlanjutan sektor pertaniannya. Sampah organik yang dihasilkan oleh masyarakat belum dikelola dengan baik, sehingga menumpuk dan berkontribusi terhadap pencemaran lingkungan. Dari total timbunan sampah harian di Kota Batu yang mencapai 102,7 ton, sekitar 47,11% berasal dari rumah tangga, namun infrastruktur pengelolaan sampah masih sangat terbatas. Akibatnya, banyak sampah yang berakhir di tempat pembuangan liar atau dibiarkan membusuk tanpa proses daur ulang yang efektif.</p>
+                    <p>Di sisi lain, sektor pertanian yang menjadi sumber penghidupan utama masyarakat juga mengalami penurunan produktivitas. Produktivitas apel, sebagai komoditas unggulan Desa Sumberbrantas, mengalami penurunan drastis dari 30 kg per pohon menjadi hanya 10 kg per pohon. Salah satu penyebab utama adalah rendahnya kadar C-organik dalam tanah, yang hanya sebesar 0,04%, jauh di bawah standar ideal untuk pertanian yang subur. Kondisi ini berdampak langsung pada kesejahteraan petani dan menurunkan daya saing hasil pertanian desa.</p>
                 </div>
-            </div>
-            <div class="col-md-5 m-0 p-0 d-flex justify-content-center align-items-center order-1 order-md-2">
-                <img src="<?= base_url('images/latar-belakang.png') ?>" style="height:280px;">
             </div>
         </div>
     </div>
@@ -108,56 +103,20 @@
 <?= $this->include('section/our-team') ?>
 
 <section>
-<div class="row bg-color1 p-0 m-0 py-5 d-flex justify-content-center align-items-center" style="width:100%;min-height:100vh">
-    <div class="row m-0 p-0 justify-content-center">
-        <div class="row col-md-9 m-0 p-0 justify-content-center">
-            <div class="col-md-6 col-lg-3 m-0 p-0 d-flex justify-content-center">
-                <div class="">
-                    <div class="d-flex justify-content-center">
-                        <div class="card m-0 p-3 bg-color2 d-flex justify-content-center align-items-center" style="height:100px;width:200px;">
-                            <h3 class="text-color1 ls-s d-inline m-0 fw-800"><?= $setoran['setoran_total'] ?></h3>
-                            <p class="text-color1 ls-s d-inline m-0">kg</p>
-                        </div>
-                    </div>
-                    <p class="text-color2 ls-xs fw-light text-center mt-3">Jumlah Sampah Terkumpul</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 m-0 p-0 d-flex justify-content-center">
-                <div class="">
-                    <div class="d-flex justify-content-center">
-                        <div class="card m-0 p-3 bg-color2 d-flex justify-content-center align-items-center" style="height:100px;width:200px;">
-                            <h3 class="text-color1 ls-s d-inline m-0 fw-800">+ 50</h3>
-                            <p class="text-color1 ls-s d-inline m-0">orang</p>
-                        </div>
-                    </div>
-                    <p class="text-color2 ls-xs fw-light text-center mt-3">Jumlah Petani</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 m-0 p-0 d-flex justify-content-center">
-                <div class="">
-                    <div class="d-flex justify-content-center">
-                        <div class="card m-0 p-3 bg-color2 d-flex justify-content-center align-items-center" style="height:100px;width:200px;">
-                            <h3 class="text-color1 ls-s d-inline m-0 fw-800">+30</h3>
-                            <p class="text-color1 ls-s d-inline m-0">orang</p>
-                        </div>
-                    </div>
-                    <p class="text-color2 ls-xs fw-light text-center mt-3">Jumlah Ibu PKK</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 m-0 p-0 d-flex justify-content-center">
-                <div class="">
-                    <div class="d-flex justify-content-center">
-                        <div class="card m-0 p-3 bg-color2 d-flex justify-content-center align-items-center" style="height:100px;width:200px;">
-                            <h3 class="text-color1 ls-s d-inline m-0 fw-800"><?= $setoran['setoran_metana'] ?></h3>
-                            <p class="text-color1 ls-s d-inline m-0 position-relative">m<i class="fsz-10 fst-normal mb-4 position-absolute">3</i></p>
-                        </div>
-                    </div>
-                    <p class="text-color2 ls-xs fw-light text-center mt-3">Pengurangan Gas Metana</p>
-                </div>
-            </div>   
-        </div>
-     
+<div class="row bg-color1 p-0 m-0" style="width:100%;height:100vh">
+<div class="col-md-6 d-flex justify-content-center align-items-center d-none d-sm-flex">
+    <img src="<?= base_url('images/il-login.png') ?>" alt="login" style="width: 50%;">
+</div>
+<div class="col-md-6 d-flex justify-content-center align-items-center">
+    <div class="" style="width: 80%;">
+        <h5 class="bg-color2 text-color1 lh-1 mb-3 d-inline px-2" style="letter-spacing:-1px;">Apakah Anda sudah memiliki akun peserta?</h5>
+        <br><br>
+        <h3 class="fw-bold text-color2 lh-1" style="letter-spacing:-1px;">Jika <i class="fst-normal bg-color2 text-color1 px-2">iya</i>,</h3>
+        <h3 class="ms-3" style="margin-top:-10px;"><a href="<?= base_url('sign-in-user') ?>" class="fst-italic fw-bold">login di sini→</a></h3>
+        <h3 class="fw-bold text-color2 lh-1" style="letter-spacing:-1px;">Jika <i class="fst-normal bg-color2 text-color1 px-2">belum</i>,</h3>
+        <h3 class="ms-3" style="margin-top:-10px;"><a href="<?= base_url('#panduan-daftar') ?>" class="fst-italic fw-bold">lihat cara daftar di sini↓</a></h3>
     </div>
+</div>
 </div>
 </section>
 

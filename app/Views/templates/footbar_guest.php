@@ -2,11 +2,28 @@
 
 <section class="bg-color1">
 <div class="row pb-5" style="width: 100%;">
-    <div class="col-md-4 pt-5">
+    <div class="col-md-4 pt-5 m-0 p-0">
         <div class="d-flex justify-content-center align-items-center mt-2">
             <img src="<?= base_url('images/logo-color2.png') ?>" alt="ecoworm" style="width:200px;">
         </div>
         <p class="text-center text-color2 mt-2">Sumber Brantas, Bumiaji, Batu</p>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="card m-0 p-3 bg-color2 mx-2 mx-md-5 px-5">
+                <div class="">
+                    <img src="<?= base_url('images/logo/ub.png') ?>" alt="" style="width:35px;">
+                    <img src="<?= base_url('images/logo/km.png') ?>" alt="" style="width:80px;" class="ms-2">
+                </div>
+                <div class="mt-3 d-flex justify-content-center align-items-center">
+                    <img src="<?= base_url('images/logo/bumn.png') ?>" alt="" style="width:100px;">
+                </div>
+                <div class="mt-1 d-flex justify-content-center align-items-center">
+                    <img src="<?= base_url('images/logo/telkom.png') ?>" alt="" style="width:100px;">
+                </div>
+                <div class="mt-3 d-flex justify-content-center align-items-center">
+                    <img src="<?= base_url('images/logo/5th.png') ?>" alt="" style="width:100px;">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="col-md-4 pt-5">
         <div class="d-flex justify-content-center">
