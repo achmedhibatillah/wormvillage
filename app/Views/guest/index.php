@@ -47,9 +47,9 @@
             <a href="<?= base_url('berita') ?>" class="btn btn-color2 he-40" style="width:190px;">Lihat berita lain</a>
         </div>
     </div>
-    <div class="col-lg-6 m-0 p-0 pt-5 pt-md-0 order-1 d-flex justify-content-center align-items-center">
-        <div class="mt-5 mt-md-3">
-            <div class="d-flex justify-content-center pt-3">
+    <div class="col-lg-6 m-0 p-0 pt-5 pt-md-0 pt-md-0 order-1 d-flex justify-content-center align-items-center">
+        <div class="mt-5 mt-md-0">
+            <div class="d-flex justify-content-center pt-3 pt-md-0">
                 <img src="<?= base_url('images/logo-circle-color2.png') ?>" alt="ecoworm" style="width:155px;">
             </div>
             <div class="text-color2">
@@ -66,20 +66,19 @@
 
 </section>
 
-<section id="latar-belakang bg-color2">
-    <div class="bg-color2 pt-5">
+<section id="latar-belakang" class="bg-color3">
+    <div class="bg-color1 pt-5">
         <div class="mt-5"></div>
         <div class="row m-0 p-0 justify-content-center">
-            <div class="col-md-7 m-0 p-0 px-3 px-md-0 order-2 order-md-1 d-flex justify-content-center">
+            <div class="col-md-7 m-0 p-0 px-3 px-md-0 order-2 order-md-1 d-flex justify-content-center mb-5">
                 <div class="" style="width:90%;">
-                    <div class="card m-0 text-color2 px-md-4 text-justify py-4 bg-color1">
+                    <div class="card m-0 text-color1 px-md-4 text-justify py-4 bg-color2">
                         <h1 class="fw-800 mb-4 text-center text-md-start">Latar Belakang Proyek</h1>
                         <div class="mx-3">
                             <p>Desa Sumberbrantas, yang terletak di Kecamatan Bumiaji, Kota Batu, Jawa Timur, menghadapi tantangan besar dalam pengelolaan sampah dan keberlanjutan sektor pertaniannya. Sampah organik yang dihasilkan oleh masyarakat belum dikelola dengan baik, sehingga menumpuk dan berkontribusi terhadap pencemaran lingkungan. Dari total timbunan sampah harian di Kota Batu yang mencapai 102,7 ton, sekitar 47,11% berasal dari rumah tangga, namun infrastruktur pengelolaan sampah masih sangat terbatas. Akibatnya, banyak sampah yang berakhir di tempat pembuangan liar atau dibiarkan membusuk tanpa proses daur ulang yang efektif.</p>
-                            <p>Di sisi lain, sektor pertanian yang menjadi sumber penghidupan utama masyarakat juga mengalami penurunan produktivitas. Produktivitas apel, sebagai komoditas unggulan Desa Sumberbrantas, mengalami penurunan drastis dari 30 kg per pohon menjadi hanya 10 kg per pohon. Salah satu penyebab utama adalah rendahnya kadar C-organik dalam tanah, yang hanya sebesar 0,04%, jauh di bawah standar ideal untuk pertanian yang subur. Kondisi ini berdampak langsung pada kesejahteraan petani dan menurunkan daya saing hasil pertanian desa.</p>
                         </div>
                     </div>
-                    <a href="<?= base_url('latar-belakang-proyek') ?>" class="btn btn-color1 mt-2">Selengkapnya</a>
+                    <a href="<?= base_url('latar-belakang-proyek') ?>" class="btn btn-color2 mt-2 mb-5">Selengkapnya</a>
                 </div>
             </div>
             <div class="col-md-5 m-0 p-0 d-flex justify-content-center align-items-center order-1 order-md-2">
@@ -90,7 +89,7 @@
 </section>
 
 <section id="about-us">
-<div class="row justify-content-center m-0 p-0 bg-color2" style="min-height:100vh;">
+<div class="row justify-content-center m-0 p-0 bg-color2" style="min-height:60vh;border-top:3px solid var(--color-1)">
     <div class="row col-md-10 m-0 p-0">
         <div class="col-md-4 m-0 p-0 d-flex justify-content-center align-items-center">
             <img src="<?= base_url('images/about-us.png') ?>" style="width:310px;" class="mt-5 mt-md-0">
@@ -111,7 +110,7 @@
 <?= $this->include('section/our-team') ?>
 
 <section>
-<div class="row bg-color1 p-0 m-0 py-5 d-flex justify-content-center align-items-center" style="width:100%;min-height:100vh">
+<div class="row bg-color1 p-0 m-0 py-5 d-flex justify-content-center align-items-center" style="width:100%;">
     <div class="row m-0 p-0 justify-content-center">
         <div class="row col-md-9 m-0 p-0 justify-content-center">
             <div class="col-md-6 col-lg-3 m-0 p-0 d-flex justify-content-center">
@@ -122,7 +121,7 @@
                             <p class="text-color1 ls-s d-inline m-0">kg</p>
                         </div>
                     </div>
-                    <p class="text-color2 ls-xs fw-light text-center mt-3">Jumlah Sampah Terkumpul</p>
+                    <p class="text-color2 ls-xs fw-light text-center mt-1 mb-3 mb-lg-0 m-0">Jumlah Sampah Terkumpul</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 m-0 p-0 d-flex justify-content-center">
@@ -133,7 +132,7 @@
                             <p class="text-color1 ls-s d-inline m-0">orang</p>
                         </div>
                     </div>
-                    <p class="text-color2 ls-xs fw-light text-center mt-3">Jumlah Petani</p>
+                    <p class="text-color2 ls-xs fw-light text-center mt-1 mb-3 mb-lg-0 m-0">Jumlah Petani</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 m-0 p-0 d-flex justify-content-center">
@@ -144,7 +143,7 @@
                             <p class="text-color1 ls-s d-inline m-0">orang</p>
                         </div>
                     </div>
-                    <p class="text-color2 ls-xs fw-light text-center mt-3">Jumlah Ibu PKK</p>
+                    <p class="text-color2 ls-xs fw-light text-center mt-1 mb-3 mb-lg-0 m-0">Jumlah Ibu PKK</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 m-0 p-0 d-flex justify-content-center">
@@ -155,7 +154,7 @@
                             <p class="text-color1 ls-s d-inline m-0 position-relative">m<i class="fsz-10 fst-normal mb-4 position-absolute">3</i></p>
                         </div>
                     </div>
-                    <p class="text-color2 ls-xs fw-light text-center mt-3">Pengurangan Gas Metana</p>
+                    <p class="text-color2 ls-xs fw-light text-center mt-1 mb-3 mb-lg-0 m-0">Pengurangan Gas Metana</p>
                 </div>
             </div>   
         </div>

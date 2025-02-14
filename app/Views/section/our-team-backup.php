@@ -11,6 +11,10 @@
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
                                 <img src="<?= base_url('images/team/3.jpg') ?>" style="width:90%;" class="rounded">
                             </div>
                             <div class="py-2">
@@ -27,6 +31,10 @@
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
                                 <img src="<?= base_url('images/team/5.png') ?>" style="width:90%;" class="rounded">
                             </div>
                             <div class="py-2">
@@ -43,6 +51,10 @@
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle-color2.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
                                 <img src="<?= base_url('images/team/4.jpg') ?>" style="width:90%;" class="rounded">
                             </div>
                             <div class="py-2">
@@ -59,6 +71,10 @@
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
                                 <img src="<?= base_url('images/team/2.jpg') ?>" style="width:90%;" class="rounded">
                             </div>
                             <div class="py-2">
@@ -75,6 +91,10 @@
                     <div class="card mb-0 my-4 bg-color1 mt-2 shadow" style="width:95%;">
                         <div class="bg-color2 rounded-top" style="height:10px;"></div>
                             <div class="d-flex justify-content-center align-items-center mt-2 position-relative">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:18%;transform:translate(-50%,-50%);top:10%;left:50%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:25%;opacity:0.3;" class="position-absolute">
+                                <img src="<?= base_url('images/logo-circle.png') ?>" style="width:15%;transform:translate(-50%,-50%);top:10%;left:75%;opacity:0.3;" class="position-absolute">
+
                                 <img src="<?= base_url('images/team/1.jpg') ?>" style="width:90%;" class="rounded">
                             </div>
                             <div class="py-2">
