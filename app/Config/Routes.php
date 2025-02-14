@@ -13,6 +13,7 @@ $routes->get('/', 'Home::index');
 
 $routes->get('berita', 'Berita::berita'); 
 $routes->get('berita/(:segment)', 'Berita::detail/$1');
+$routes->get('latar-belakang-proyek', 'Home::latarbelakang'); 
 $routes->get('about-us', 'Home::aboutus'); 
 
 // Auth :

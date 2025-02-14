@@ -71,12 +71,15 @@
         <div class="mt-5"></div>
         <div class="row m-0 p-0 justify-content-center">
             <div class="col-md-7 m-0 p-0 px-3 px-md-0 order-2 order-md-1 d-flex justify-content-center">
-                <div class="card m-0 text-color2 px-md-4 text-justify py-4 bg-color1" style="width:90%;">
-                    <h1 class="fw-800 mb-4 text-center text-md-start">Latar Belakang Proyek</h1>
-                    <div class="mx-3">
-                        <p>Desa Sumberbrantas, yang terletak di Kecamatan Bumiaji, Kota Batu, Jawa Timur, menghadapi tantangan besar dalam pengelolaan sampah dan keberlanjutan sektor pertaniannya. Sampah organik yang dihasilkan oleh masyarakat belum dikelola dengan baik, sehingga menumpuk dan berkontribusi terhadap pencemaran lingkungan. Dari total timbunan sampah harian di Kota Batu yang mencapai 102,7 ton, sekitar 47,11% berasal dari rumah tangga, namun infrastruktur pengelolaan sampah masih sangat terbatas. Akibatnya, banyak sampah yang berakhir di tempat pembuangan liar atau dibiarkan membusuk tanpa proses daur ulang yang efektif.</p>
-                        <p>Di sisi lain, sektor pertanian yang menjadi sumber penghidupan utama masyarakat juga mengalami penurunan produktivitas. Produktivitas apel, sebagai komoditas unggulan Desa Sumberbrantas, mengalami penurunan drastis dari 30 kg per pohon menjadi hanya 10 kg per pohon. Salah satu penyebab utama adalah rendahnya kadar C-organik dalam tanah, yang hanya sebesar 0,04%, jauh di bawah standar ideal untuk pertanian yang subur. Kondisi ini berdampak langsung pada kesejahteraan petani dan menurunkan daya saing hasil pertanian desa.</p>
+                <div class="" style="width:90%;">
+                    <div class="card m-0 text-color2 px-md-4 text-justify py-4 bg-color1">
+                        <h1 class="fw-800 mb-4 text-center text-md-start">Latar Belakang Proyek</h1>
+                        <div class="mx-3">
+                            <p>Desa Sumberbrantas, yang terletak di Kecamatan Bumiaji, Kota Batu, Jawa Timur, menghadapi tantangan besar dalam pengelolaan sampah dan keberlanjutan sektor pertaniannya. Sampah organik yang dihasilkan oleh masyarakat belum dikelola dengan baik, sehingga menumpuk dan berkontribusi terhadap pencemaran lingkungan. Dari total timbunan sampah harian di Kota Batu yang mencapai 102,7 ton, sekitar 47,11% berasal dari rumah tangga, namun infrastruktur pengelolaan sampah masih sangat terbatas. Akibatnya, banyak sampah yang berakhir di tempat pembuangan liar atau dibiarkan membusuk tanpa proses daur ulang yang efektif.</p>
+                            <p>Di sisi lain, sektor pertanian yang menjadi sumber penghidupan utama masyarakat juga mengalami penurunan produktivitas. Produktivitas apel, sebagai komoditas unggulan Desa Sumberbrantas, mengalami penurunan drastis dari 30 kg per pohon menjadi hanya 10 kg per pohon. Salah satu penyebab utama adalah rendahnya kadar C-organik dalam tanah, yang hanya sebesar 0,04%, jauh di bawah standar ideal untuk pertanian yang subur. Kondisi ini berdampak langsung pada kesejahteraan petani dan menurunkan daya saing hasil pertanian desa.</p>
+                        </div>
                     </div>
+                    <a href="<?= base_url('latar-belakang-proyek') ?>" class="btn btn-color1 mt-2">Selengkapnya</a>
                 </div>
             </div>
             <div class="col-md-5 m-0 p-0 d-flex justify-content-center align-items-center order-1 order-md-2">

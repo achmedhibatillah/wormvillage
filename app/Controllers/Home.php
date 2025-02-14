@@ -90,6 +90,21 @@ class Home extends BaseController
         view('templates/footer');
     }
 
+    public function latarbelakang()
+    {
+        $status = [
+            'page' => 'latar-belakang',
+            'judul' => 'Latar Belakang'
+        ]; 
+
+        return 
+        view('templates/header', $status) .
+        view('templates/navbar_guest') .
+        view('guest/latar-belakang') .
+        view('templates/footbar_guest') .
+        view('templates/footer');
+    }
+
     protected function limitWords($text, $limit)
     {
         $words = explode(' ', trim($text));
